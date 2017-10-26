@@ -73,9 +73,10 @@ RSpec.describe 'Todo API', type: :request do
       end
 
       it 'returns a validation failure message' do
-        expect(response.body).to matche(/Validation failed: Created by can't be blank/)
+        expect(response.body).to match(/Validation failed: Created by can't be blank/)
       end
     end
+  end
 
     #  Test suite fot Post /todos/:id
     describe 'PUT /todos/:id' do
